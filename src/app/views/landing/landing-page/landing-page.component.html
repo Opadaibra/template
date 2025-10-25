@@ -1,25 +1,22 @@
 <div class="landing" dir="ltr">
-  <header class="navbar w-50">
-    <div class="container">
+  <header class="navbar">
+    <div class="container header-container">
       <div class="brand animate__animated animate__flash"><i class="fa-solid fa-bolt "></i> Angular Template</div>
       <nav>
         <ng-container *ngFor="let link of links; let i = index">
-          <a 
-            [href]="link.href" 
-            class="animate__animated animate__bounceIn"
+          <a [href]="link.href" class="animate__animated animate__bounceIn"
             [ngStyle]="{'animation-delay': (i * 0.3) + 's'}">
             {{ link.label }}
           </a>
         </ng-container>
-        
+
 
       </nav>
 
 
-      <div class="togglers" >
-        <app-language-switcher 
-        class="animate__animated animate__heartBeat" 
-        [ngStyle]="{'animation-delay': (5000) + 's'}"></app-language-switcher>
+      <div class="togglers">
+        <app-language-switcher class="animate__animated animate__heartBeat"
+          [ngStyle]="{'animation-delay': (5000) + 's'}"></app-language-switcher>
         <app-theme-toggle></app-theme-toggle>
       </div>
     </div>
@@ -35,7 +32,7 @@
         </p>
         <div class="actions">
           <a routerLink="/register" class="btn primary">Get Started</a>
-          <a routerLink="/docs" class="btn outline">Documentation</a>
+          <a routerLink="/note" class="btn outline">Note</a>
         </div>
       </div>
 
@@ -48,7 +45,7 @@
         <h2>Security & Access Control</h2>
         <p>Protect routes with AuthGuard and control element access using Permissions Directive.</p>
       </div>
-  
+
       <div class="cards">
         <div class="card">
           <i class="fa-solid fa-lock"></i>
@@ -68,7 +65,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="feature-section" id="api">
     <div class="container">
       <div class="section-header" data-aos="fade-up">
@@ -248,29 +245,21 @@
         <h2>Animations Powered by AOS & Animate.css</h2>
         <p>Enhance user experience with smooth scroll-based animations and dynamic effects.</p>
       </div>
-  
+
       <div class="cards">
-        <div class="card " 
-             data-aos="fade-right" 
-             data-aos-delay="0" 
-             style="animation-delay: 0s;">
+        <div class="card " data-aos="fade-right" data-aos-delay="0" style="animation-delay: 0s;">
           <i class="fa-solid fa-arrow-up-right-dots"></i>
           <h3>Scroll Animations</h3>
           <p>Elements animate as you scroll using AOS for smooth entrance effects.</p>
         </div>
-  
-        <div class="card " 
-             data-aos="fade-up" 
-             data-aos-delay="200" 
-             style="animation-delay: 0.2s;">
+
+        <div class="card " data-aos="fade-up" data-aos-delay="200" style="animation-delay: 0.2s;">
           <i class="fa-solid fa-clock"></i>
           <h3>Custom Timing</h3>
           <p>Control duration, delay, and easing for Animate.css effects and AOS animations.</p>
         </div>
-  
-        <div class="card " 
-             data-aos="fade-left" 
-             style="animation-delay: 0.4s;">
+
+        <div class="card " data-aos="fade-left" style="animation-delay: 0.4s;">
           <i class="fa-solid fa-magic"></i>
           <h3>Reusable Effects</h3>
           <p>Combine both libraries to make animations reusable and visually appealing.</p>
@@ -278,32 +267,35 @@
       </div>
     </div>
   </section>
-  
 
-<!-- Contact -->
-<section class="contact" id="contact" data-aos="fade-up">
-  <div class="container text-center">
-    <h2>Let's Connect!</h2>
-    <p>Interested in the template or a collaboration? Reach out to me:</p>
 
-    <div class="contact-links" >
-      <a href="https://opadaibra.github.io/portfolio/" target="_blank" class="btn">
-        <i class="fa-solid fa-folder-open"></i> Portfolio
-      </a>
-      <a href="https://linkedin.com/in/obada-ibra-b28354247" target="_blank" class="btn ms-1">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/Opadaibra" target="_blank" class="btn ms-1">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
+  <!-- Contact -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <div class="container text-center">
+      <h2>Let's Connect!</h2>
+      <p>Interested in the template or a collaboration? Reach out to me:</p>
+
+      <div class="contact-links">
+        <a href="https://opadaibra.github.io/portfolio/" target="_blank" class="btn mt-1">
+          <i class="fa-solid fa-folder-open"></i>
+          <span class="no-text"> Portfolio</span>
+        </a>
+        <a href="https://linkedin.com/in/obada-ibra-b28354247" target="_blank" class="btn ms-1">
+          <i class="fa-brands fa-linkedin"></i>
+          <span class="no-text"> LinkedIn</span>
+        </a>
+        <a href="https://github.com/Opadaibra" target="_blank" class="github btn ms-1 mt-5">
+          <i class="fa-brands fa-github"></i>
+          <span class="no-text"> GitHub</span>
+        </a>
+      </div>
+
+      <div class="contact-phone" style="margin-top: 1rem;">
+        <p><i class="fa-solid fa-phone"></i> +963 988 796 741</p>
+        <p><i class="fa-solid fa-phone"></i> +963 962 934 928</p>
+      </div>
     </div>
-
-    <div class="contact-phone" style="margin-top: 1rem;">
-      <p><i class="fa-solid fa-phone"></i> +963 988 796 741</p>
-      <p><i class="fa-solid fa-phone"></i> +963 962 934 928</p>
-    </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Footer -->
